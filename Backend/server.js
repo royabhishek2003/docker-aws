@@ -13,7 +13,7 @@ const httpServer = createServer(app)
 const io = new Server(httpServer, {
     cors: {
         origin: "*",
-        methods: [ "GET", "POST" ]
+        methods: ["GET", "POST"]
     }
 })
 
@@ -28,7 +28,6 @@ app.get('/health', (req, res) => {
         success: true
     })
 })
-
 
 httpServer.listen(3000, () => {
     console.log("Server is running on port 3000")

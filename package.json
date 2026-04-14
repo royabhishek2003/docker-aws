@@ -1,0 +1,16 @@
+{
+  "name": "docker-aws",
+  "version": "1.0.0",
+  "description": "Collaborative code editor with Docker & AWS deployment",
+  "scripts": {
+    "install:all": "cd Frontend && npm install && cd ../Backend && npm install",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev:backend": "cd Backend && npm run dev",
+    "start:backend": "cd Backend && npm start",
+    "build:frontend": "cd Frontend && npm run build",
+    "dev": "start cmd /k \"cd Frontend && npm run dev\" && cd Backend && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
